@@ -23,7 +23,7 @@ const Ask = function(questions){
         let results = [];
         for (let i = 0; i < questions.length; i++) {
             const result = await askQuestion(rl, questions[i])            
-            result.push(result);
+            results.push(result)
         }
         rl.close();
         resolve(results)
